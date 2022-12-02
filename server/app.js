@@ -1,4 +1,5 @@
 const dotenv=require("dotenv");
+const path = require('path');
 const express=require("express");
 dotenv.config({path:'./config.env'});
 require('./db/conn');
@@ -6,7 +7,6 @@ const port=process.env.PORT;
 var cors = require('cors');
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
-const path = require('path');
 
 const app = express();
 
@@ -25,7 +25,7 @@ app.use(user);
 app.use(express.static(path.join(__dirname,"../client/build")));
 
 // yani koi bhi url ho hume uspe sirf ek hi file chalani h
-app.get("*",(req,res)=>{
+app.get("/",(req,res)=>{
     res.sendFile(path.resolve(__dirname,"../client/build/index.html"))
 })
 
