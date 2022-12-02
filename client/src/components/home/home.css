@@ -1,0 +1,15 @@
+.home p{
+    font-weight: 800;
+    font-size: 23px;
+    color: #a29bfe;
+    text-transform: uppercase;
+  }
+  .home h1{
+    font-weight: 800;
+    font-size: 60px;
+  }
+  .home h2{
+    font-size: 30px;
+    margin-top: 5px;
+    text-align:center;
+  }

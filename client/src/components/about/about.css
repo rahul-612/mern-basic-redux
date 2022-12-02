@@ -1,0 +1,94 @@
+.aboutContainer{
+    /* background-color: blueviolet; */
+    height:65vh;
+    width: 70vw;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.aboutImg{
+    display: flex;
+    justify-content: center;
+}
+.aboutImg img{
+    height: 18rem;
+    margin-top: 2rem;
+}
+.aboutLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 50%; */
+}
+.aboutLinks p{
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.aboutLinks a{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: all .2s;
+}
+.aboutLinks a:hover{
+    color: var(--main_color) ;
+}
+.rightAbout{
+    /* background-color: red; */
+    display:grid;
+    grid-template-rows: 1fr 4fr;
+}
+.user{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    /* background-color: aliceblue; */
+}
+.profession{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+}
+.profession h3{
+    font-size: 2.5rem;
+}
+.profession p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.editBtn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+}
+.editBtn button{
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    border-radius: 2rem;
+    transition: all .2s;
+}
+.editBtn button:hover{
+    background-color: rgb(242, 236, 236);
+}
+.userDetails{
+    /* background-color: #443ad4; */
+    margin-top: 1rem;
+}
+.userForm{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .6fr .6fr .6fr .6fr;
+    /* column-gap: 2rem; */
+    
+}
+.userForm label, .userForm p{
+    font-size: 2rem;
+    
+}

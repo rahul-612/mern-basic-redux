@@ -1,0 +1,40 @@
+nav{
+    width: 100vw;
+    height: 12vh;
+    background-color: #FBFBFB;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+nav figure{
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+nav figure img{
+    height: 10vh;
+    margin-left: 2vw;
+}
+nav ul{
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 4vh;
+}
+.navLink{
+    font-size: 2rem;
+    text-decoration:none;
+    color: black;
+}
+.navLink:hover{
+    color: rgba(0, 0, 0, 0.605);
+}
+
+a.active{
+    text-decoration: dotted;
+    color: var(--main_color);
+}
